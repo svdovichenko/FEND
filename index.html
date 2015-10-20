@@ -1,144 +1,446 @@
 <!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Serhiy Vdovichenko Portfolio</title>
 
-<!--
-This is an HTML document. It contains information about how elements in the website
-are arranged. In other words, it describes the layout of a website.
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-I can't wait to see the resumes you put together!
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+				<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+				<![endif]-->
 
-Cameron Pittman, Udacity Course Developer
--->
+	<!-- Font -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-<!--
-The <head> of a website generally links to important resources the page will
-need to load. You'll see a lot of <link>s to CSS files for styles and
-<scripts> for JavaScript files to build interactions.
--->
-<head>
-  <!-- This tells the browser how to read the document. -->
-  <meta charset="utf-8">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/scrolling-nav.css">
 
-  <!-- Tells the browser what the title of this page should be. -->
-  <title>Resume</title>
+	<!-- JS -->
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!-- Modals for Services -->
+			<div class="modal fade" id="web-design" tabindex="-1" role="dialog" aria-labelledby="web-design-label" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title" id="web-design-label">Web Design</h4>
+						</div>
+						<div class="modal-body">
+							<img src="images/768/web-design.jpg" class="img-responsive" alt="Web Page Design">
+							<hr>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sed dolores iusto ab vero
+								tempora in earum accusantium quas iure repellendus fugit ipsa reiciendis.
+								Id illo natus sequi ex eveniet! Dipisicing elit. Ad sed dolores iusto ab vero tempora in earum accusantium quas
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sed dolores iusto ab vero tempora in earum
+								accusantium quas iure repellendus fugit ipsa reiciendis. Id illo natus sequi ex eveniet!
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div><!-- end modal-content -->
+				</div><!-- end modal-dialog -->
+			</div><!-- end modal -->
+			<div class="modal fade" id="development" tabindex="-1" role="dialog" aria-labelledby="development-label" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title" id="development-label">Development</h4>
+						</div>
+						<div class="modal-body">
+							<img src="images/768/web-dev.jpg" class="img-responsive" alt="Responsive image">
+							<hr>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Ad sed dolores iusto ab vero tempora in earum accusantium quas iure repellendus fugit ipsa reiciendis.
+								Id illo natus sequi ex eveniet! Dipisicing elit. Ad sed dolores iusto ab vero tempora in earum accusantium.
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div><!-- end modal-content -->
+				</div><!-- end modal-dialog -->
+			</div><!-- end modal -->
+			<div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="support-label" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title" id="support-label">Development</h4>
+						</div>
+					<div class="modal-body">
+						<img src="images/768/support.jpg" class="img-responsive" alt="Responsive image">
+						<hr>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Ad sed dolores iusto ab vero tempora in earum accusantium quas iure repellendus fugit ipsa reiciendis.
+							Id illo natus sequi ex eveniet! Dipisicing elit. Ad sed dolores iusto ab vero tempora in earum accusantium quas.
+							Ad sed dolores iusto ab vero tempora in earum accusantium quas.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div><!-- end modal-content -->
+				</div><!-- end modal-dialog -->
+			</div><!-- end modal -->
 
-  <!-- Load the page styles. -->
-  <link href="css/style.css" rel="stylesheet">
+			<!--To make the jumbotron full width, and without rounded corners, place it outside all .containers and instead add a .container within. -->
+			<div class=" jumbotron" id="home">
+				<!-- Nav Container -->
+				<div class="row">
+					<div class="col-md-12">
+						<!-- Navigation -->
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<nav class="navbar navbar-default navbar-fixed-top">
+							<div class="container-fluid overwrite-fluid">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-mobile-collapse">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a  class="navbar-brand myLogo" href="#home"> <span class="logo-s">S</span> <span class="logo-v">V</span> </a>
+								</div>
+								<div class="collapse navbar-collapse navbar-mobile-collapse">
+									<ul class="nav navbar-nav navbar-right">
+										<li>
+											<a class="page-scroll menu-list menu-hover" href="#home">Home</a>
+										</li>
+										<li>
+											<a class="page-scroll menu-list menu-hover" href="#services">Services</a>
+										</li>
+										<li>
+											<a class="page-scroll menu-list menu-hover" href="#projects">Projects</a>
+										</li>
+										<li>
+											<a class="page-scroll menu-list menu-hover" href="#contact">Contact</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+						<div class="row text-center">
+							<h1 class="jumbotron-h1">
+								Hello! I am <br> <span>Serhiy Vdovichenko</span>
+							</h1>
+							<h3>
+								I love design and develop awesome <span>web applications</span>
+							</h3>
+						</div>
+					</div>
+				</div><!-- end Jumbotron -->
+			</div>
 
-  <!--
-  jQuery is a common JavaScript library for reading and making changes to the
-  Document Object Model (DOM). The DOM is a tree that contains information
-  about what is actually visible on a website.
+			<!-- Content Container -->
+			<div class="bg-services-projects-header">
+				 <!-- Services -->
+				<div class="row services" id="services">
+					<div class="col-md-4">
+						<div class="services-design text-center">
+							<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+							<h3 class="services-h3">
+								Web Design
+							</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Tempora ut dignissimos delectus nobis ipsa. Consequuntur, incidunt, minima, repudiandae,
+								velit odio quasi harum tenetur molestiae tempora possimus molestias quibusdam provident magnam.
+							</p>
+							<a href="#" class="read-more" data-toggle="modal" data-target="#web-design">read more</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="services-develop text-center">
+							<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+							<h3 class="services-h3">
+								Development
+							</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Tempora ut dignissimos delectus nobis ipsa. Consequuntur, incidunt, minima, repudiandae,
+								Tempora ut dignissimos delectus nobis ipsa. Consequuntur, incidunt, minima, repudiandae,
+								velit odio quasi harum tenetur molestiae tempora possimus molestias quibusdam provident magnam.
+							</p>
+							<a href="#" class="read-more" data-toggle="modal" data-target="#development">read more</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="services-suport text-center">
+							<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+							<h3 class="services-h3">
+								Support
+							</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Tempora ut dignissimos delectus nobis ipsa.
+								velit odio quasi harum tenetur molestiae tempora possimus molestias quibusdam provident magnam.
+							</p>
+							<a href="#" class="read-more" data-toggle="modal" data-target="#support">read more</a>
+						</div>
+					</div>
+				</div>
 
-  While HTML is a static document, the browser converts HTML to the
-  DOM and the DOM can change. In fact, JavaScript's power comes from
-  its ability to manipulate the DOM, which is essentially a JavaScript
-  object. When JavaScript makes something interesting happen on a
-  website, it's likely the action happened because JavaScript changed
-  the DOM. jQuery is fast and easy to use, but it doesn't do anything
-  you can't accomplish with vanilla (regular) JavaScript.
-  -->
-  <script src="js/jQuery.js"></script>
+				<!-- Projects Header-->
+				<div class="row projects-header projects-container" id="projects">
+					<div class="col-md-6 project-margin">
+						<h1 class="projects-header-h1">
+							RECENT PROJECTS
+						</h1>
+					</div>
+					<div class="col-md-6 text-right project-margin">
+						<ul class="sorting-projects navbar-right">
+							<li class="active">
+								<a class="all" href="#"> ALL </a>
+							</li>
+							<li>
+								<a class="2015" href="#"> 2015 </a>
+							</li>
+							<li>
+								<a class="2014" href="#"> 2014 </a>
+							</li>
+							<li>
+								<a class="2013" href="#"> 2013 </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-  <!-- More on helper.js in the class -->
-  <script src="js/helper.js"></script>
+			<!-- Projects Content -->
+			<div class="row projects">
+				<div class="col-md-3 col-sm-6 2015 prohects-column">
+					<div class="car-repair-shop project-item ">
+						<img class="img-responsive img" src="images/768/car-repair.jpg" alt="Car Repair Shop">
+						<div class="caption text-center">
+							<div class="caption-heading">
+								<div class="logo-bg">
+									<img class="img-responsive logo" src="images/logos/Auto-Repair-Shop.png" alt="Logo of Car Repair Shop" >
+								</div>
+								<a href="#">
+									<h2 class="text-center">
+										<span class="glyphicon glyphicon-link " aria-hidden="true"></span>
+										<span class="project-more-details">More Details</span>
+									</h2>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 2014 prohects-column">
+					<div class="tools-shop project-item ">
+						<img class="img-responsive img" src="images/768/tools-shop.jpg" alt="Tools">
+						<div class="caption">
+							<div class="caption-heading">
+								<a href="#">
+									<h2 class="text-center">
+										<span class="glyphicon glyphicon-link " aria-hidden="true"></span>
+										<span class="project-more-details">More Details</span>
+									</h2>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 2015 prohects-column">
+					<div class="awsome-cafe project-item ">
+						<img class="img-responsive img" src="images/768/cafe.jpg" alt="Awsome Cafe">
+						<div class="caption">
+							<div class="caption-heading">
+								<a href="#">
+									<h2 class="text-center">
+										<span class="glyphicon glyphicon-link " aria-hidden="true"></span>
+										<span class="project-more-details">More Details</span>
+									</h2>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 2013 prohects-column">
+					<div class="cofee project-item">
+							<img class="img-responsive img" src="images/768/coffe.jpg" alt="Coffee">
+						<div class="caption">
+							<div class="caption-heading">
+								<a href="#">
+									<h2 class="text-center">
+										<span class="glyphicon glyphicon-link " aria-hidden="true"></span>
+										<span class="project-more-details">More Details</span>
+									</h2>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row projects">
+				<div class="col-md-3  col-sm-6 2014 prohects-column">
+					<div class="famous-bar project-item">
+						<img class="img-responsive img" src="images/768/bar.jpg" alt="Famous Bar">
+						<div class="caption">
+							<div class="caption-heading">
+								<a href="#">
+									<h2 class="text-center">
+										<span class="glyphicon glyphicon-link " aria-hidden="true"></span>
+										<span class="project-more-details">More Details</span>
+									</h2>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 2015 prohects-column">
+					<div class="eat-smart project-item">
+						<img class="img-responsive img" src="images/768/eat-smart.jpg" alt="Eat Smart Blog">
+						<div class="caption">
+							<div class="caption-heading">
+								<a href="#">
+									<h2 class="text-center">
+										<span class="glyphicon glyphicon-link " aria-hidden="true"></span>
+										<span class="project-more-details">More Details</span>
+									</h2>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 2013 prohects-column">
+					<div class="hally-photography project-item">
+						<img class="img-responsive img" src="images/768/hally-photography.jpg" alt="Hally Grace Photography">
+						<div class="caption">
+							<div class="caption-heading">
+								<a href="#">
+									<h2 class="text-center">
+										<span class="glyphicon glyphicon-link " aria-hidden="true"></span>
+										<span class="project-more-details">More Details</span>
+									</h2>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 2014 prohects-column">
+					<div class="national-park project-item">
+						<img class="img-responsive img" src="images/768/national-park.jpg" alt="national Park">
+						<div class="caption">
+							<div class="caption-heading">
+								<a href="#">
+									<h2 class="text-center">
+										<span class="glyphicon glyphicon-link " aria-hidden="true"></span>
+										<span class="project-more-details">More Details</span>
+									</h2>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- end Projects Content -->
 
-  <!--
-  Uncomment the <script> tag below when you're ready to add an interactive
-  Google Map to your resume!
-  -->
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+			<!-- Contact  -->
+			<div class="contact-bg">
+				<div class="row contact text-center" id="contact">
+					<div class="col-md-4">
+						<div class="email">
+							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+							<h3>
+								Email
+							</h3>
+							<p>
+								your@email.com
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="location ">
+							<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+							<h3>
+								Location
+							</h3>
+							<p>
+								333 Awsome St, <br>
+								Happy Town, Lucky State<br>
+								Fun Country<br>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="phone-number ">
+							<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+							<h3>
+								Phone Number
+							</h3>
+							<p>
+								1 (004) 222 22 22
+							</p>
+						</div>
+					</div>
+				</div><!-- end Contact  -->
+			</div>
+			<!--  Footer  -->
+			<footer class="row">
+				<div class="col-md-6">
+					<div class="social-icons text-center">
+						<a href=""><i class="fa fa-4x fa-twitter-square"></i></a>
+						<a href=""><i class="fa fa-4x fa-facebook-square"></i></a>
+						<a href=""><i class="fa fa-4x fa-google-plus-square"></i></a>
+						<a href=""><i class="fa fa-4x fa-vimeo-square"></i></a>
+						<a href=""><i class="fa fa-4x fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="col-md-6 ">
+					<div class="rights text-center">
+						<p>
+							© 2015 Serhiy Vdovichenko. All Rights Reserved
+						</p>
+					</div>
+				</div>
+			</footer><!--  end Footer  -->
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-1.11.2.min.js"></script>
 
-  <meta name="viewport" content="width=device-width">
-</head>
-<body>
-  <div id="main">
-	<!-- You'll be deleting this line in the course -->
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.js"></script>
 
-    <!--
-    Everything from here to the <script> tag below is the skeleton of your
-    website. Your code will add information to each of the sections of the
-    resume below. You can pretty easily figure out what each section will
-    display by looking at the id or at what's written between the <h2> tags.
-    -->
-    <div id="header" class="center-content clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
-    </div>
-    <div style="clear: both;"></div>
-    <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
-    </div>
-    <div id="projects">
-      <h2>Projects</h2>
-    </div>
-    <div id="education" class="gray">
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
-    <div id="lets-connect" class="dark-gray">
-      <h2 class="green center-text">Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
-          <li><a href="#" class="footer-link">mobile</a></li>
-          <li><a href="#" class="footer-link">email</a></li>
-          <li><a href="#" class="footer-link">github</a></li>
-          <li><a href="#" class="footer-link">twitter</a></li>
-      </ul>
-    </div> 
-  </div>
+		<!--Center Modal -->
+		<script src="js/modal-center.js"></script>
+		<script src="js/scrolling-nav.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
 
-  <!--
-  The next line tells the browser where to download the JavaScript file you'll be
-  writing. In resumeBuilder.js, you'll be writing code that builds the resume
-  dynamically when this website, index.html, is opened.
-  -->
-  <script src="js/resumeBuilder.js"></script>
+		<!-- Modified from stackoverflow ... forget to add link ... and now cant find the author -->
+		<script>
+		$(document).ready(function () {
+			$('.sorting-projects  li a').click(function () {
+				var ourClass = $(this).attr('class');
+				$('.sorting-projects  li').removeClass('active');
+				$(this).parent().addClass('active');
 
-
-  <!--
-  These scripts are written in JavaScript. You'll be breaking them down as part of
-  a quiz. Essentially, the next few lines are checking to see if you have not
-  changed each section of the resume. If you have not made any changes to a section
-  of the resume, then that part of the resume does not show up. More on this in the
-  course.
-  -->
-
-  <script type="text/javascript">
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
-
-
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
-
-    //   two slashes for all following characters on a single line, or
-
-    /*
-        an opening and closing set of slash asterisks for block comments.
-    */
-
-
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
-</body>
+				if (ourClass == 'all') {
+					$('.projects').children().show();
+				} else {
+					$('.projects').children('div:not(.' + ourClass + ')').hide();
+					$('.projects').children('div.' + ourClass).show();
+				}
+				return false;
+			});
+		});
+		</script>
+	</body>
 </html>

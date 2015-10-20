@@ -1,0 +1,614 @@
+/* CSS */
+/* Font sizing cheatsheet
+{font-size:1em;} 10px
+{font-size:1.2em;} 12px capta
+{font-size:1.4em;} 14px text
+{font-size:1.6em;}  16px subhead, menu
+{font-size:1.8em;} 18px heading
+{font-size:2em;} 20px display
+*/
+
+/* Colors
+hero: #2c3e50
+text, menu text: #212121
+hover menu text, secondary, icons: rgba(0,0,0,0.54)
+logo,action text: #ff5722
+action text hover: #ffab91
+*/
+
+/* General */
+body {
+	font: 400 10px "Roboto", sans-serif;
+	color: #212121;
+	max-width: 100%;
+	height: 100%;
+}
+
+.bg-services-projects-header {
+	background: #fafafa url(../images/light/light3.png) repeat;
+}
+
+/* Header */
+.jumbotron {
+	font-size: 1.6em;
+	background: #2c3e50 url(../images/bg3.png) no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	padding: 60px 0;
+	margin: 0;
+	color: #fff;
+	font-weight: 700;
+}
+
+.nav-container {
+	height: 50px;
+	max-width: 1170px;
+	margin: 0 auto;
+	top: 0;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-bottom: none;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav .menu-list {
+	color: #fff;
+	transition: 400ms ease-in-out;
+	margin: 0 20px 0 0;
+}
+
+.navbar-default .navbar-nav .menu-list:hover {
+	color: rgba(255,255,255,0.50);
+	border-bottom: 2px solid #fff;
+	height: 50px;
+	transition: 400ms ease-in;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 1.8em;
+}
+
+.navbar-brand .logo-v {
+	color:  #212121;
+	background-color: #ff5722;
+	padding: 0 8px 0 8px;
+}
+
+.navbar-brand .logo-s {
+	color: #fff;
+}
+
+.navbar-collapse.collapse.in {
+	background-color: transparent;
+	border: none;
+}
+
+h1 span {
+	color: #ff5722;
+}
+
+/*Modal services */
+.modal-dialog-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.modal-body {
+	overflow-y: auto;
+}
+
+.modal-footer {
+	margin: 0;
+}
+
+/* Services */
+.services {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.services .glyphicon {
+	font-size: 4.8em;
+	color: rgba(0,0,0,0.54);
+	margin: 50px 0 0 0;
+}
+
+.services-h3 {
+	font-weight: 700;
+	padding-top: 0;
+}
+
+.services p {
+	padding: 20px;
+	text-align: left;
+	margin: 0 0 10px 0;
+	font-size: 1.6em;
+	font-weight: 300;
+}
+
+.services .read-more {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ff5722;
+	font-size: 1.6em;
+}
+
+.services a.read-more {
+	text-decoration: none;
+	transition: 400ms ease-in-out;
+}
+
+.services a.read-more:hover {
+	color: #ffab91;
+	text-decoration: none;
+	padding: 10px;
+	transition: 400ms ease-in-out;
+}
+
+/* Projects */
+.projects-container {
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+.project-margin {
+	margin: 40px 0;
+}
+
+.projects-header-h1:before {
+	content: "";
+	position: absolute;
+	left: 15px;
+	bottom: 0;
+	height: 0;
+	width: 25%;
+	border-bottom: 5px solid #ff5722;
+}
+
+.projects .prohects-column {
+	padding: 0;
+}
+
+.projects-header ul {
+	display: flex;
+}
+
+.projects-header ul li:first-child {
+	border-left: 1px solid #ff5722;
+}
+
+.projects-header ul li {
+	text-decoration: none;
+	border-right: 1px solid #ff5722;
+	border-top: 1px solid #ff5722;
+	border-bottom: 1px solid #ff5722;
+	padding: 10px 20px 10px 20px;
+	display: inline-block;
+}
+
+.projects-header ul li a {
+	text-decoration: none;
+	color: #ff5722;
+	transition: 400ms ease-in-out;
+}
+
+.projects-header ul li a:focus {
+	text-decoration: none;
+	color: #ffab91;
+}
+
+.projects-header ul li a:hover {
+	text-decoration: none;
+	color: #ffab91;
+	transition: 400ms ease-in-out;
+}
+
+.sorting-projects {
+	font-weight: 700;
+	font-size: 1.6em;
+	margin: 10px 0 0 0;
+}
+
+.sorting-projects ul li {
+	display: inline-block;
+	padding: 10px;
+}
+
+.projects .caption {
+	opacity: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,87,34,0.75);
+	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	transition: visibility .5s ease-in-out;
+}
+
+.project-item:hover .caption {
+	opacity: 1;
+}
+
+.caption-heading {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.caption-heading a{
+	text-decoration: none;
+}
+
+.caption-heading img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 0 -50% 0 0;
+	transform: translate(-50%, -50%);
+	border: none;
+	max-width: 75%;
+}
+
+span.glyphicon.glyphicon-link {
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	color: #ff5722;
+	-webkit-transition: 400ms ease-in;
+	transition: 400ms ease-in;
+}
+
+span.glyphicon.glyphicon-link:hover {
+	padding: 10px;
+	background-color: #fff ;
+	border-radius: 50%;
+	color: #ffab91;
+	-webkit-transition: 400ms ease-in;
+	transition: 400ms ease-in;
+	cursor: pointer;
+}
+
+.project-more-details {
+	padding: 20px 0 0 0;
+	display: block;
+	color: #fff;
+}
+
+.project-more-details:hover {
+	color: #ffab91;
+	-webkit-transition: 400ms ease-in;
+	transition: 400ms ease-in;
+}
+
+/* Contact */
+.contact-bg {
+	background: #212121 url(../images/dark/dark101.png) repeat;
+}
+
+.contact {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.email,
+.location,
+.phone-number {
+	padding: 55px 0 0 0;
+}
+
+.contact .glyphicon {
+	font-size: 4.8em;
+	color: #fff;
+}
+
+.contact p,
+.contact h3 {
+	color: #fff;
+	font-size: 1.6em;
+	padding: 20px;
+}
+
+.contact h3 {
+	font-weight: 700;
+}
+
+.contact p {
+	font-weight: 300;
+}
+
+/* Footer */
+footer p {
+	font-size: 1.6em;
+	color: rgba(0,0,0,0.54);
+	padding: 70px 0 0 0;
+}
+
+.social-icons .fa {
+	padding: 60px 10px 60px 0;
+	color: #ff5722;
+	transition: 400ms ease-in-out;
+}
+
+.social-icons .fa:hover {
+	color: #ffab91;
+	transition: 400ms ease-in-out;
+}
+
+.overwrite-fluid{ max-width: 1170px; }
+
+/* responsive part */
+@media screen and (max-width: 767px) {
+
+	button.navbar-toggle {
+		margin: 10px 30px 0 0;
+	}
+
+	.jumbotron {
+		font-size: 1.6em;
+		background: #2c3e50 url(../images/768/small-bg.png) no-repeat;
+		background-size: cover;
+		height: 100vh;
+		width: 100vw;
+		padding: 60px 0;
+		margin: 0;
+		position: relative;
+	}
+
+	.jumbotron-h1 {
+		padding: 25vh 0 0 0;
+	}
+
+	.projects-header-h1 {
+		font-size: 2em;
+		padding: 5px;
+		margin: 0 0 30px 0;
+	}
+
+	.projects-header h1:before {
+		left: 20px;
+	}
+
+	.projects-header .text-right {
+		text-align: center;
+		padding: 0;
+	}
+
+	.car-repair-shop .img,
+	.car-repair-shop .caption {
+		border-top: 5px solid #fff;
+	}
+
+	.projects .img {
+		border-left: 5px solid #fff;
+		border-right: 5px solid #fff;
+		border-bottom: 5px solid #fff;
+	}
+
+	.projects .caption {
+		border-left: 5px solid #fff;
+		border-right: 5px solid #fff;
+		border-bottom: 5px solid #fff;
+	}
+
+	.caption .logo-bg {
+		width: 35%;
+		height: 35%;
+		border-radius: 100%;
+		background-color: rgba(0,0,0,0.4);
+		position: absolute;
+		top: 20%;
+		right: 40%;
+		margin: 0 -50% 0 0;
+		transform: translate(-50%, -50%)
+	}
+
+	.projects .caption {
+		opacity: 1;
+		background-color: transparent;
+	}
+
+	.caption-heading .glyphicon-link {
+		position: absolute;
+		top: 75%;
+	}
+
+	.contact .email::after {
+		content: "";
+		position: absolute;
+		left: 25%;
+		bottom: 0;
+		height: 0;
+		width: 50%;
+		border-top: 1px solid #b3340c;
+		border-bottom: 1px solid #d86a48;
+	}
+
+	.contact .location::after {
+		content: "";
+		position: absolute;
+		left: 25%;
+		bottom: 0;
+		height: 0;
+		width: 50%;
+		border-top: 1px solid #b3340c;
+		border-bottom: 1px solid #d86a48;
+	}
+
+	.contact p,
+	.contact h3,
+	.contact .glyphicon {
+		padding: 0;
+		margin: 0;
+	}
+
+	.contact .glyphicon {
+		margin: 0 0 10px 0;
+		padding: 10px;
+	}
+
+	.contact p,
+	.contact h3 {
+		padding: 10px;
+	}
+
+	.contact .phone-number {
+		margin: 0 0 50px 0;
+	}
+
+	.social-icons .fa {
+		padding: 30px 0 30px 0;
+	}
+
+	footer p {
+		padding: 0px 0 30px 0;
+	}
+
+	.navbar-default .navbar-nav > li > a:hover {
+		border: none;
+	}
+
+	span.glyphicon.glyphicon-link {
+		padding: 10px;
+		background-color: #fff;
+		border-radius: 50%;
+		color: #ff5722;
+		-webkit-transition: 400ms ease-in;
+		transition: 400ms ease-in;
+		font-size: 16px;
+	}
+
+	.modal-dialog-center {
+		width: 100%;
+	}
+
+	.navbar-toggle {
+		margin: 0 30px 0 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.jumbotron {
+		padding: 100px 0 180px 0;
+	}
+
+	.jumbotron-h1 {
+		padding: 140px 0 0 0;
+	}
+
+	.projects-header .text-right {
+		text-align: center;
+		padding: 0;
+	}
+
+	.car-repair-shop .caption-heading img {
+		width: 75%;
+	}
+
+	.projects .caption {
+		border: 5px solid #ffab91;
+	}
+
+	.contact .email::after {
+		content: "";
+		position: absolute;
+		left: 25%;
+		bottom: 0;
+		height: 0;
+		width: 50%;
+		border-top: 1px solid #b3340c;
+		border-bottom: 1px solid #d86a48;
+
+	}
+
+	.contact .location::after {
+		content: "";
+		position: absolute;
+		left: 25%;
+		bottom: 0;
+		height: 0;
+		width: 50%;
+		border-top: 1px solid #b3340c;
+		border-bottom: 1px solid #d86a48;
+	}
+
+	.contact p,
+	.contact h3,
+	.contact .glyphicon {
+		padding: 0;
+		margin: 0;
+	}
+
+	.contact .glyphicon {
+		margin: 0 0 10px 0;
+		padding: 10px;
+	}
+
+	.contact p,
+	.contact h3 {
+		padding: 10px;
+	}
+
+	.contact .phone-number {
+		margin: 0 0 50px 0;
+	}
+
+	.social-icons .fa {
+		padding: 30px 0 30px 0;
+	}
+
+	footer p {
+		padding: 0 0 30px 0;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	.jumbotron {
+		padding: 100px 0 180px 0;
+	}
+
+	.jumbotron-h1 {
+		padding: 100px 0 0 0;
+	}
+
+	.contact .email::after {
+		display: none;
+	}
+
+	.contact .location::after {
+		display: none;
+	}
+
+	.contact .location {
+		margin: 0 0 50px 0;
+	}
+
+	footer p {
+		padding: 40px 0 0 0;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+	.jumbotron {
+		padding: 100px 0 180px 0;
+	}
+
+	.jumbotron-h1 {
+		padding: 180px 0 0 0;
+	}
+
+}
