@@ -157,10 +157,8 @@ var Engine = (function(global) {
         gameOverPic.forEach(function(gameOver) {
             gameOver.render();
         });
-
-
+        
         player.render();
-       // score.drawScore.draw();
     }
 
     /* This function does nothing but it could have been a good place to
@@ -176,17 +174,13 @@ var Engine = (function(global) {
      * all of these images are properly loaded our game will start.
      */
     Resources.load([
-        'images/heart2.png',
-        'images/done.png',
-        'images/Rock.png',
         'images/stone-block.png',
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png',
+        'images/done.png',
         'images/ninja.png',
-        'images/heart2.png',
-        'images/Rock.png'
+        'images/heart2.png'
     ]);
     Resources.onReady(init);
 
