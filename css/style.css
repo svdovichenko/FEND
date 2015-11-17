@@ -15,13 +15,12 @@ body {
   overflow: hidden;
   min-width: 100vw;
   min-height: 100vh;
-  font-family: 'Ceviche One', sans-serif;
-  font-size: 2em;
+  font: 2em "Ceviche One", sans-serif;
   color: #212121; 
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 2.5em;
   margin: 10% 0 0 0;
   padding: 0;
   text-shadow: 3px 3px 0px rgba(255,255,255, 0.5);
@@ -40,7 +39,7 @@ canvas {
 }
 
 .fa .fa-trash-o .fa-lg {
- font-family: 'FontAwesome'; 
+ font-family: "FontAwesome"; 
 }
 
 i {
@@ -88,8 +87,8 @@ i {
 }
 
 .start {
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  padding: 0;
+  margin: 0;
   line-height: 48px;
 }
 
