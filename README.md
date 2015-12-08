@@ -13,3 +13,4 @@
 2. Assign pizzasDiv to variable and moving it  outside the loop.
 3. If we output to console:  console.log("new width: " + newwidth); in a loop we will find that the size of pizzaContainer is same. So we can declare variables outside of the loop.
 4. Added will-change: transform on .mover class. To create own layers for objects.  
+5. Assign scrollTopvariable to document.body.scrollTop  property and moved out of the loop  to increase perfomance.
