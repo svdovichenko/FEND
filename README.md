@@ -1,6 +1,6 @@
-# FEND
-Udacity FEND projects
+# Part 1: Optimize PageSpeed Insights score for index.html
+## Solution
 
-1. About Me
-2. Resume
-3. Arcade Game
+1. 
+2. 
+3. 
